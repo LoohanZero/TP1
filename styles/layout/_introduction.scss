@@ -1,0 +1,36 @@
+.introduction {
+    padding-top: 80px;
+    background-image: url('../img/intro-bg.png');
+    background-size: cover;
+    background-repeat: repeat;
+    z-index: 0;
+
+    @include flex(center, space-evenly);
+}
+
+.introduction-left {
+    width: 500px;
+    @include flex(column, space-evenly, flex-start);
+    height: 300px;
+
+
+    h1 {
+        font-size: $main-title-size;
+        font-weight: bold;
+        color: $color-white;
+        line-height: 50px;
+    }
+
+    .highlight {
+        color: $color-highlight;
+        text-decoration: underline;
+    }
+
+    button {
+        @include btn;
+    }
+}
+
+.img-right {
+    height: 300px;
+}

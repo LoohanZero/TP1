@@ -1,0 +1,166 @@
+/*------------------------------------------------------------
+                        ASIDE
+-------------------------------------------------------------*/
+
+
+#sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(19, 39, 57, 0.8);
+    opacity: 0.9;
+    height: 100%;
+    width: 300px;
+    transform: translateX(-300px);
+    transition: all 0.3s;
+    z-index: 3000;
+    padding-top: 10px;
+    overflow: auto;
+
+    &:target {
+        display: block;
+        height: 100%;
+        transform: translateX(0);
+        transition: all 0.3s;
+        z-index: 3000;
+
+        & + .background-close {
+            display: block;
+            position: absolute;
+            height: 100vh;
+            width: 100vw;
+            background-color: rgba(19, 39, 57, 0.8);
+            z-index: 800;
+            top: 0;
+            left: 0;
+            cursor: default;
+            overflow: hidden;
+            
+        }
+    }
+
+    .background-close {
+        display: none;
+        
+        
+        /*margin-left: 250px;*/
+        /*z-index: 600;
+        position: absolute;
+        top: 0;
+        left: 0;
+        cursor: default;
+        overflow: hidden;*/
+    }
+    .close {
+        color: $color-white;
+        font-size: 18px;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+    .aside-item {
+        line-height: 40px;
+        padding: 5px 30px;
+        
+    }
+}
+/*.first-dropdown {
+    // height: ;
+}*/
+ul.aside-list-dropdown {
+    list-style: none;
+    // height: 0px;
+    display: none;
+    width: 200px;
+    transition: all 0.3s;
+    // overflow: hidden;
+    padding-left: 20px;
+ 
+}
+.aside-icon-item {
+    @include flex(row, space-between);
+    &::after {
+        content:"\f078";
+        font-family: "Font Awesome 5 Free"; 
+        font-size: $default-font-size;
+        font-weight: 900;
+        
+    }
+}
+.aside-nav-link {
+    color: $color-white;
+    font-size: $bigger-font-size;
+
+    &:hover {
+        color: $color-nav-hover;
+    }
+}
+
+#aside-dropdown {
+    display: none;
+
+
+    &:checked ~ .aside-list-dropdown {
+        // height: 210px;
+        display: block;
+        transition: all 0.3s;
+        
+       
+      
+    }
+}
+.aside-dropdown-item {
+    // padding-left: 20px;
+    line-height: 43.2px;
+
+
+}
+.a-no-show-deepdropdown {
+    /*padding: $p-10;*/
+    width: 150px;
+    line-height: 43.2px;
+}
+
+#aside-deepdropdown {
+    display: none;
+    width: 201px;
+}
+.aside-icon-deep {
+    @include flex(row, space-between);
+
+    &::after {
+        content:"\f078";
+        font-family: "Font Awesome 5 Free"; 
+        font-size: $default-font-size;
+        font-weight: 900;
+        
+    }
+
+
+}
+#aside-deepdropdown {
+    
+    &:checked > &::after  {
+        content:"\f077";
+        font-family: "Font Awesome 5 Free"; 
+        font-size: $default-font-size;
+        font-weight: 900;
+    
+    }
+    &:checked ~ ul.aside-list-deepdropdown {
+        height: 210px;  
+        display: block;
+       
+    }
+
+    
+
+}
+ul.aside-list-deepdropdown {
+    height: 0px;
+    width: 200px;
+    transition: all 0.3s;
+    // overflow: hidden; 
+    padding-left: 20px;
+    display: none;
+}
