@@ -46,7 +46,7 @@
 -----------------------------------------------------*/
 .dropdown-item {
     position: relative;
-    transition: all 0.3s;
+    transition: ease all 0.3s;
 }
 
 .nav-list-dropdown {
@@ -62,7 +62,7 @@
 
     .nav-list-dropdown {
         display: block;
-        transition: all 0.3s;
+        transition: ease all 0.3s;
     }
 }
 
@@ -102,14 +102,15 @@
 }
 
 .deepdropdown-item {
-    transition: all 0.3s;
+    transition: ease all 0.3s;
 }
 
 .deepdropdown-item:hover {
+    transition: ease all 0.3s;
 
     .nav-list-deepdropdown {
         display: block;
-        transition: all 0.3s;
+        transition: ease all 0.3s;
     }
 }
 

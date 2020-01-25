@@ -3,6 +3,20 @@
 -------------------------------------------------------------*/
 
 
+.close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: $color-white;
+    z-index: 3000;
+
+    .fas.fa-times {
+        font-size: 20px;
+
+    }
+    
+}
+
 #sidebar {
     position: fixed;
     top: 0;
@@ -78,6 +92,8 @@ ul.aside-list-dropdown {
  
 }
 .aside-icon-item {
+    width: 220px;
+
     @include flex(row, space-between);
     &::after {
         content:"\f078";
@@ -104,11 +120,17 @@ ul.aside-list-dropdown {
         // height: 210px;
         display: block;
         transition: all 0.3s;
-        
-       
-      
     }
-}
+   
+    &:checked ~ .aside-icon-item::after {
+            content:"\f077";
+            font-family: "Font Awesome 5 Free"; 
+            font-size: $default-font-size;
+            font-weight: 900;
+    }
+          
+    }
+
 .aside-dropdown-item {
     // padding-left: 20px;
     line-height: 43.2px;
@@ -123,7 +145,7 @@ ul.aside-list-dropdown {
 
 #aside-deepdropdown {
     display: none;
-    width: 201px;
+    // width: 21px;
 }
 .aside-icon-deep {
     @include flex(row, space-between);
@@ -135,23 +157,21 @@ ul.aside-list-dropdown {
         font-weight: 900;
         
     }
-
-
 }
 #aside-deepdropdown {
     
-    &:checked > &::after  {
-        content:"\f077";
-        font-family: "Font Awesome 5 Free"; 
-        font-size: $default-font-size;
-        font-weight: 900;
-    
-    }
     &:checked ~ ul.aside-list-deepdropdown {
         height: 210px;  
         display: block;
        
     }
+
+    &:checked ~ .aside-icon-deep::after {
+        content:"\f077";
+        font-family: "Font Awesome 5 Free"; 
+        font-size: $default-font-size;
+        font-weight: 900;
+}
 
     
 

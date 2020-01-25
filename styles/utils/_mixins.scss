@@ -5,10 +5,10 @@
     align-items: $align-items;
 }
 
-@mixin btn($color-btn:#007bff, $border-btn:none) {
-    background-color: $color-btn;
+@mixin btn1 {
+    background-color: #007bff;
     outline: none;
-    border: $border-btn;
+    border: 2px solid #007bff;
     color: $color-white;
     height: 40px;
     width: 165px;
@@ -17,14 +17,43 @@
     font-family: $secondary-font;
     font-size: 15px;
     font-weight: bold;
+    cursor: pointer;
+    transition: ease all 0.3s;
+
+    &:hover {
+        background-color: #1445b3;
+        border: 2px solid $color-white;
+        transition: ease all 0.3s;
+    }
 }
 
+@mixin btn2 {
+    background-color: #1445b3;
+    outline: none;
+    border: 2px solid $color-white;
+    color: $color-white;
+    height: 40px;
+    width: 165px;
+    border-radius: 25px;
+    margin: 10px;
+    font-family: $secondary-font;
+    font-size: 15px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: ease all 0.3s;
+
+    &:hover {
+        background-color: #007bff;
+        border: 2px solid #007bff;  
+        transition: ease all 0.3s; 
+    }
+}
 @mixin dropdown($width: 180px) {
     display: none;
     width: $width;
     position: absolute;
     background-color: $color-white;
     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.2);
-    transition: all 0.3s;
+    transition: ease all 0.3s;
 }
 
