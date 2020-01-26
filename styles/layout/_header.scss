@@ -51,6 +51,7 @@
 
 .nav-list-dropdown {
     @include dropdown;
+    transform: translateY(50px);
     left: -10px;
     top: 30px;
     z-index: 1000;
@@ -61,7 +62,8 @@
 .dropdown-item:hover {
 
     .nav-list-dropdown {
-        display: block;
+        transform: translateY(0);
+        opacity: 1;
         transition: ease all 0.3s;
     }
 }
@@ -91,6 +93,8 @@
 
 .nav-list-deepdropdown {
     @include dropdown(200px);
+    transform: translateX(-50px);
+    transition: ease all 0.3s;
     position: absolute;
     z-index: 1500;
     left: 180px;
@@ -103,14 +107,16 @@
 
 .deepdropdown-item {
     transition: ease all 0.3s;
-}
+   
 
-.deepdropdown-item:hover {
+    &:hover {
     transition: ease all 0.3s;
-
-    .nav-list-deepdropdown {
-        display: block;
+    
+        .nav-list-deepdropdown {
+        transform: translateX(0px);
+        opacity: 1;
         transition: ease all 0.3s;
+        }
     }
 }
 
@@ -132,7 +138,3 @@
         display: block;
     }
 }
-
-
-
-

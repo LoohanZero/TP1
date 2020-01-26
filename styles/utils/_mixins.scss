@@ -49,7 +49,7 @@
     }
 }
 @mixin dropdown($width: 180px) {
-    display: none;
+    opacity: 0;
     width: $width;
     position: absolute;
     background-color: $color-white;
@@ -57,3 +57,16 @@
     transition: ease all 0.3s;
 }
 
+@mixin sectionTitles {
+    font-size: 36px;
+    color: #283d50;
+    text-align: center;
+    font-weight: 500;
+    margin-bottom: 30px;
+}
+
+@mixin sectionSubtitles($subtitle-width: 50%) {
+    color: #556877;
+    width: $subtitle-width;
+    text-align: center;
+}

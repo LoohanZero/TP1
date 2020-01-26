@@ -6,6 +6,8 @@
 body {
     font-family: $default-font;
     background-color: $background-body;
+    color: $default-font-color;
+    font-size: $default-font-size;
 
    
 }
@@ -29,4 +31,12 @@ ul {
         }
         
     }
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    font-family: $secondary-font;
 }

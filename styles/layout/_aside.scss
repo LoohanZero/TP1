@@ -106,6 +106,7 @@ ul.aside-list-dropdown {
 .aside-nav-link {
     color: $color-white;
     font-size: $bigger-font-size;
+    cursor: pointer;
 
     &:hover {
         color: $color-nav-hover;
@@ -159,6 +160,7 @@ ul.aside-list-dropdown {
     }
 }
 #aside-deepdropdown {
+    
     
     &:checked ~ ul.aside-list-deepdropdown {
         height: 210px;  
