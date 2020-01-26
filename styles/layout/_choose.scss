@@ -1,0 +1,148 @@
+.chooseus-section {
+    @include flex(column, space-evenly, center);
+    background-color: $color-darkerblue;
+    color: $color-white;
+
+    
+    p {
+        color: $color-lightblue;
+        text-align: center;
+        line-height: 25px;
+    }
+    
+    @media(max-width: 990px) {
+        height: 100%;
+        padding-top: 50px;
+    
+    }
+}
+
+.chooseus-header {
+    @include flex(column, center, center);
+    
+
+    h2 {
+        @include sectionTitles;
+        color: $color-white;
+    
+    }
+    p {
+        @include sectionSubtitles(75%); 
+        color: $color-white;
+    }
+}
+
+
+.chooseus-cards-container {
+    @include flex(row, space-between, center);
+    width: $section-width;
+
+    @media(max-width: 1200px) {
+        width: 100%;
+    }
+    @media(max-width: 990px) {
+        @include flex(column, center, center);
+        margin: 40px 0;
+    }
+    
+}
+
+.card-container {
+    @include flex(column, center, center);
+    background-color: $color-darkblue;
+    max-width: 290px;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all ease-in-out 0.3s;
+
+    &:hover {
+        background-color: $color-evendarkerblue;
+        transition: all ease-in-out 0.3s;
+
+        .card-link {
+            border-bottom: 2px solid $color-darkblue;
+            transition: all ease-in-out 0.3s;
+        }
+    }
+   
+
+    i {
+        font-size: $main-title-size;
+        color: $color-lightblue;
+    }
+
+    h5 {
+        font-size: 22px;
+        padding: 20px 0;
+        
+    }
+
+
+    .card-link {
+        color: $color-white;
+        font-weight: bold;
+        font-size: $bigger-font-size;
+        margin: 30px;
+        transition: all ease-in-out 0.3s;
+        border-bottom: #00458f solid 2px;
+        cursor: pointer;
+
+        &:hover {
+            transition: all ease-in-out 0.3s;
+            border-bottom: 2px solid $color-white;
+        }
+
+        @media(max-width: 1000px) {
+            margin: 30px 0 0px 0;
+        }
+    }
+
+    @media(max-width: 1200px) {
+        @include flex(column, space-between, center);
+        height: 300px;
+        width: 260px;
+        padding: 20px;
+    }
+
+    @media(max-width: 990px) {
+       width: $section-width;
+       max-width: 1200px;
+       margin: 20px;
+    }
+
+   
+}
+
+.chooseus-info-container {
+    @include flex(row, space-evenly, center);
+    width: $section-width;
+
+    @media(max-width: 990px) {
+          @include flex(row, space-evenly, center);
+          flex-wrap: wrap;
+          padding-bottom: 50px;
+
+    }
+}
+
+.chooseus-info {
+    @include flex(column, center, center);
+    width: 25%;
+
+    p:nth-child(1) {
+        font-size: $main-title-size;
+        font-family: $secondary-font;
+        font-weight: bold;
+    
+    }
+
+    p:nth-child(2) {
+        padding: 20px;
+    }
+
+
+    @media(max-width: 990px) {
+       width: 50%;
+   }
+}
