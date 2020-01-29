@@ -14,7 +14,12 @@ $color-darkblue:#00458f;
 $color-darkerblue: #004a99;
 $color-lightblue: #d8eafe;
 $color-evendarkerblue: #003b7a;
-
+$color-lighterblue: #ecf5ff;
+$color-blue: #3395ff;
+$color-blue-background: #003166;
+$color-black: #000;
+$color-grey: #999;
+$color-lighter-grey: #ddd;
 
 //Fonts
 $default-font: 'Open Sans', sans-serif;
@@ -26,9 +31,17 @@ $icon-size: 10px;
 $main-title-size: 48px;
 $big-icon-size: 24px;
 $subtitle-font-size: 18px;
+$p-line-height: 25px;
 
 
 // Paddings and margins
 $p-10: 10px;
 $p-20: 20px;
 $m-50: 50px;
+
+// Breakpoints
+
+$widescreen: 1200px;
+$in-between: 990px;
+$mobile: 900px;
+$small-screen: 770px;

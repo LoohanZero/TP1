@@ -1,0 +1,299 @@
+/*------------------------------------------------
+               SERVICES CARDS
+------------------------------------------------*/
+
+.services-card {
+    position: relative;
+    background-color: $color-white;
+    max-width: 40%;
+    padding: 30px;
+    box-sizing: border-box;
+    margin: 0px 40px 40px 0px;
+    border-radius: 10px;
+    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
+    overflow: hidden;
+    transition: all ease-out 0.3s;
+    max-width: 430px;
+    max-height: 170px;
+
+    &:hover {
+        transform: translateY(-10px);
+        transition: all ease-out 0.3s;
+    }
+
+    &:hover .card-title {
+        color: #007bff;
+    
+    }
+}
+
+.services-icon {
+    position: absolute;
+    font-size: 64px;
+    top: calc(50% - 32px);
+    left: -10px;
+}
+
+.fas.fa-chart-pie {
+    color: #ff689b;
+}
+
+.fas.fa-book-open {
+    color: #e9bf06;
+}
+
+.far.fa-file-alt {
+    color: #3fcdc7;
+}
+
+.fas.fa-tachometer-alt {
+    color: #41cf2e;
+}
+
+.fas.fa-globe {
+    color: #d6ff22;
+}
+
+.far.fa-clock {
+    color: #4680ff;
+   
+}
+.services-card-description {
+    
+
+    .card-title {
+        font-size: $subtitle-font-size;
+        text-decoration: none;
+        color: #000;
+        font-family: $secondary-font;
+        padding: $p-10 0 $p-10 70px;
+        font-weight: bold;
+    }
+
+    p {
+        padding: $p-10 0 $p-10 70px;
+        line-height: $p-line-height;
+    }
+}
+
+
+/*------------------------------------------------
+               CHOOSE US CARDS
+------------------------------------------------*/
+
+
+.card-container {
+    @include flex(column, center, center);
+    background-color: $color-darkblue;
+    max-width: 290px;
+    box-sizing: border-box;
+    padding: 20px;
+    border-radius: 10px;
+    transition: all ease-in-out 0.3s;
+
+    &:hover {
+        background-color: $color-evendarkerblue;
+        transition: all ease-in-out 0.3s;
+
+        .card-link {
+            border-bottom: 2px solid $color-darkblue;
+            transition: all ease-in-out 0.3s;
+        }
+    }
+   
+
+    i {
+        font-size: $main-title-size;
+        color: $color-lightblue;
+    }
+
+    h5 {
+        font-size: 22px;
+        padding: 20px 0;
+        
+    }
+
+
+    .card-link {
+        color: $color-white;
+        font-weight: bold;
+        font-size: $bigger-font-size;
+        margin: 30px;
+        transition: all ease-in-out 0.3s;
+        border-bottom: #00458f solid 2px;
+        cursor: pointer;
+
+        &:hover {
+            transition: all ease-in-out 0.3s;
+            border-bottom: 2px solid $color-white;
+        }
+
+        @media(max-width: $in-between) {
+            margin: 30px 0 0px 0;
+        }
+    }
+
+    @media(max-width: $widescreen) {
+        @include flex(column, space-between, center);
+        height: 300px;
+        width: 260px;
+        padding: 20px;
+    }
+
+    @media(max-width: $in-between) {
+       width: $section-width;
+       max-width: $widescreen;
+       margin: 20px;
+    }
+  
+}
+
+
+/*------------------------------------------------
+               PORTFOLIO CARDS
+------------------------------------------------*/
+
+.portfolio-card-container {
+    position: relative;
+    margin: 15px 10px;
+    transition: all ease-in-out 0.3s;
+
+
+    &:hover .portfolio-info {
+        opacity: 1;
+        transition: all ease-in-out 0.3s;
+
+        @media(max-width: $widescreen) {
+            width: 290px;
+            height: 250px;
+        }
+
+        @media(max-width: $small-screen) {
+            width: 95%;
+            min-width: 455px;
+        }
+    }
+
+    &:hover .portfolio-info-bg {
+        opacity: 0.5;
+        width: 350px;
+        height: 250px;
+        background-color: $color-blue-background;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 299;
+        border-radius: 5px;
+        transition: all ease-in-out 0.3s;
+
+        @media(max-width: $widescreen) {
+            width: 290px;
+            height: 250px;
+        }
+
+        @media(max-width: $small-screen) {
+            width: 95%;
+            min-width: 455px;
+        }
+    }
+    
+}
+
+.portfolio-img-container {
+    width: 350px;
+    height: 250px;
+    overflow: hidden;
+    border-radius: 5px;
+
+    img {
+        width: 350px;
+        height: 100%;
+        object-fit: cover;
+        opacity: 0.9;
+
+        @media(max-width: $small-screen) {
+            width: 100%;
+            min-width: 455px;
+        }
+    }
+
+    @media(max-width: $widescreen) {
+        width: 290px;
+        height: 250px;
+    }  
+    
+    @media(max-width: $small-screen) {
+        width: 95%;
+        min-width: 455px;
+    }
+}
+
+.portfolio-info-bg {
+    width: 350px;
+    height: 250px;
+    background-color: $color-blue-background;
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 299;
+    border-radius: 5px;
+    transition: all ease-in-out 0.3s;
+
+    @media(max-width: $widescreen) {
+        width: 290px;
+        height: 250px;
+    } 
+
+    @media(max-width: $small-screen) {
+        width: 95%;
+        min-width: 455px;
+    }
+}
+.portfolio-info {
+    @include flex(column, center, center);
+    width: 350px;
+    height: 250px;
+    color: $color-white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 300;
+    border-radius: 5px;
+    opacity: 0;
+    transition: all ease-in-out 0.3s;
+
+    @media(max-width: $widescreen) {
+        width: 290px;
+        height: 250px;
+    } 
+
+    @media(max-width: $small-screen) {
+        width: 95%;
+        min-width: 455px;
+    }
+
+    a {
+        font-size: 22px;
+        font-family: $secondary-font;
+        font-weight: bold;
+        color: $color-white;
+        transition: all ease-in-out 0.3s;
+
+        &:hover {
+            color: $color-nav-hover;
+            transition: all ease-in-out 0.3s;
+ 
+        }
+    }
+}
+
+.portfolio-options-container {
+    @include flex(row, center, center);
+    margin: 20px;
+    
+
+    .portfolio-link {
+        margin: 5px;
+    }
+}

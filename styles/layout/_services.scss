@@ -25,83 +25,10 @@
     max-width: $section-width;
     margin: $m-50;
 
-    @media(max-width: 900px) {
+    @media(max-width: $mobile) {
         @include flex(column, center, center);
     }
 
 
 }
 
-.services-card {
-    position: relative;
-    background-color: $color-white;
-    max-width: 40%;
-    padding: 30px;
-    box-sizing: border-box;
-    margin: 0px 40px 40px 0px;
-    border-radius: 10px;
-    box-shadow: 0 10px 29px 0 rgba(68, 88, 144, 0.1);
-    overflow: hidden;
-    transition: all ease-out 0.3s;
-    max-width: 430px;
-    max-height: 170px;
-
-    &:hover {
-        transform: translateY(-10px);
-        transition: all ease-out 0.3s;
-    }
-
-    &:hover .card-title {
-        color: #007bff;
-    
-    }
-}
-
-.services-icon {
-    position: absolute;
-    font-size: 64px;
-    top: calc(50% - 32px);
-    left: -10px;
-}
-
-.fas.fa-chart-pie {
-    color: #ff689b;
-}
-
-.fas.fa-book-open {
-    color: #e9bf06;
-}
-
-.far.fa-file-alt {
-    color: #3fcdc7;
-}
-
-.fas.fa-tachometer-alt {
-    color: #41cf2e;
-}
-
-.fas.fa-globe {
-    color: #d6ff22;
-}
-
-.far.fa-clock {
-    color: #4680ff;
-   
-}
-.services-card-description {
-    
-
-    .card-title {
-        font-size: $subtitle-font-size;
-        text-decoration: none;
-        color: #000;
-        font-family: $secondary-font;
-        padding: $p-10 0 $p-10 70px;
-        font-weight: bold;
-    }
-
-    p {
-        padding: $p-10 0 $p-10 70px;
-        line-height: 25px;
-    }
-}

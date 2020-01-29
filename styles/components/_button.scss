@@ -1,3 +1,8 @@
+/*-----------------------------------------------
+                BUTTONS INTRO
+------------------------------------------------*/
+
+
 button.getstarted {
     @include btn1;
 }
@@ -5,4 +10,47 @@ button.getstarted {
 
 button.ourservices {
     @include btn2;
+}
+
+
+/*-----------------------------------------------
+                BUTTONS PORTFOLIO
+------------------------------------------------*/
+.portfolio-select {
+    @include flex(row, center, center);
+    font-size: 12px;
+    height: 32px;
+    width: 60px;
+    background-color: $color-lighterblue;
+    cursor: pointer;
+    border-radius: 15px;
+    color: $color-nav-hover;
+    margin: 8px;
+    transition: all ease-in-out 0.3s;
+
+    &:hover {
+        background-color: $color-nav-hover;
+        color: $color-white;
+        transition: all ease-in-out 0.3s;
+    }
+
+}
+
+
+
+.portfolio-link {
+    @include flex(row, center, center);
+    border-radius: 50%;
+    height: 36px;
+    width: 36px;
+    background-color: $color-nav-hover;
+    color: $color-white;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+
+    &:hover {
+        background-color: $color-blue;
+        transition: all ease-in-out 0.3s;
+
+    }
 }

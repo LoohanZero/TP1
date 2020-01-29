@@ -14,7 +14,7 @@
     width: $section-width;
     
 
-    @media(max-width: 900px) {
+    @media(max-width: $mobile) {
         @include flex(column, center, center);
     }
 }
@@ -23,7 +23,7 @@
     @include flex(column, space-evenly, flex-start);
     height: 300px;
 
-    @media(max-width: 900px) {
+    @media(max-width: $mobile) {
         order: 2;
         @include flex(column, center, center);
     }
@@ -35,7 +35,7 @@
         color: $color-white;
         line-height: 50px;
 
-        @media(max-width: 900px) {
+        @media(max-width: $mobile) {
            text-align: center;
            line-height: 60px;
         }

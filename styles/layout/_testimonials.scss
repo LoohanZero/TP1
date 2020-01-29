@@ -1,0 +1,142 @@
+.section-testimonials {
+    @include flex(column, center, center);
+    height: 100%;
+    width: 100%;
+    background-color: $color-lighterblue;
+    box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
+    padding-top: 50px;
+
+    h2 {
+        @include sectionTitles;
+    }
+}
+
+.slider-container {
+    @include flex(row, center, flex-start);
+    height: 45vh;
+    width: 100%;
+
+    @media(max-width: $small-screen) {
+        height: 70vh;  
+        width: 100%;
+    
+             
+   }
+}
+
+
+.slider {
+    @include flex(row, center, flex-start);
+    // width: 730px;
+    position: relative;
+    
+    
+}
+
+.slider-option {
+    
+    margin: 5px;
+    width: 100%;
+}
+
+.t-input {
+    @include flex(row, center, center);
+    position: relative;
+    z-index: 3;
+    bottom: -210px;
+    cursor: pointer;
+
+    input {
+        opacity: 0;
+        z-index: 5;
+        cursor: pointer;
+
+        &:checked ~ .t-button {
+            background-color: $color-nav-hover;
+            transition: all ease-in-out 0.3s;
+        }
+        
+    }
+
+
+    @media(max-width: $small-screen) {
+         bottom: -340px;  
+              
+    }
+
+}
+
+.t-button {
+    position: absolute;
+    height: 13px;
+    width: 13px;
+    border-radius: 50%;
+    border-radius: 50%;
+    background-color: $color-lighter-grey;
+    top: 0;
+    left: 0;
+    transition: all ease-in-out 0.3s;
+}
+.testimonial-container {
+    @include flex(row, center,center);
+    position: absolute;
+    top: 0;
+    left: -325px;
+    background-color: $color-lighterblue;
+    width: 730px;
+
+    @media(max-width: $small-screen) {
+        @include flex(column, center, center);
+        width: 510px;
+        top: 0;
+        left: -195px;
+    }
+
+
+    img {
+        height: 120px;
+        width: 120px;
+        border-radius: 50%;
+        border: 5px solid $color-white;
+    }
+}
+
+
+
+.t-info {
+    margin: 30px;
+    width: 80%;
+
+
+    h3 {
+        color: $color-black;
+        font-size: 20px;
+        padding: 5px 0;
+
+        @media(max-width: $small-screen) {
+            text-align: center;
+        }
+    }
+
+    & > p {
+            color: $color-grey;
+            font-family: $secondary-font;
+
+            @media(max-width: $small-screen) {
+                text-align: center;
+            }
+
+    }
+}
+
+.t-description {
+    padding: 15px 0;
+    font-style: italic;
+    font-weight: bold;
+    opacity: 0.8;
+    line-height: $p-line-height;
+
+    @media(max-width: $small-screen) {
+        text-align: center;
+    }
+}
