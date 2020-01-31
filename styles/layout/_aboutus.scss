@@ -22,6 +22,10 @@
     }
     p {
         @include sectionSubtitles; 
+
+        @media(max-width: $mobile) {
+            width: 100%;
+        }
     }
 
     
@@ -35,6 +39,7 @@
 
     @media(max-width: $mobile) {
         width: 85%;
+
     }
 }
 
@@ -55,6 +60,7 @@
         @include flex(column, center, center);
         width: 100%;
         order: 2;
+        margin-top: 20px;
     }
 }
 
@@ -145,7 +151,6 @@
     @media(max-width: $mobile) {
       order: 2;
       margin-top: 00px;
-      margin-bottom: 50px;
     }
     h3 {
         margin-top: 20px;

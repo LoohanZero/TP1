@@ -69,4 +69,38 @@
     color: #556877;
     width: $subtitle-width;
     text-align: center;
+    font-size: $p-font-size;
+}
+
+@mixin teamCards {
+    width: 255px;
+    height: 255px;
+    border-radius: 50%;
+    overflow: hidden;
+
+    @media(max-width: $widescreen) {
+        width: 210px;
+        height: 210px;
+    }
+
+    @media(max-width: $in-between) {
+        width: 330px;
+        height: 330px;
+        
+    }
+
+    @media(max-width: $small-screen) {
+        width: 510px;
+        height: 510px;
+        
+    }
+}
+
+
+@mixin input {
+    padding: 8px;
+    font-size: $default-font-size;
+    border: 1px solid $color-input;
+    width: 100%;
+    font-family: inherit;
 }

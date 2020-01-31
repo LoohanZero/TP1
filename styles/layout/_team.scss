@@ -1,0 +1,33 @@
+#team {
+    @include flex(column, center, center);
+    height: 100%;
+    padding-top: 100px;
+ 
+
+        h2 {
+            @include sectionTitles;
+        }
+
+        .team-subtitle {
+            @include sectionSubtitles;
+            width: 35%;
+        }
+
+}
+
+
+.team-cards-container {
+    @include flex(row, center, center);
+    width: 100%;
+    margin: 70px 0;
+    flex-wrap: wrap;
+    height: 100%;
+
+
+    @media(max-width: $in-between) {
+        @include flex(row, center, center);
+        width: 100%;
+
+    }
+}
+

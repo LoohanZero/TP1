@@ -54,3 +54,22 @@ button.ourservices {
 
     }
 }
+
+
+/*-----------------------------------------------
+                BUTTONS CONTACT
+------------------------------------------------*/
+
+
+.send {
+    @include flex(row, center, center);
+    width: 170px;
+    height: 40px;
+    background-color: $color-nav-hover;
+    border: none;
+    border-radius: 25px;
+    color: $color-white;
+    font-family: inherit;
+    font-size: 16px;
+    
+}

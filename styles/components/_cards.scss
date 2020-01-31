@@ -3,6 +3,7 @@
 ------------------------------------------------*/
 
 .services-card {
+    @include flex(column, center, center);
     position: relative;
     background-color: $color-white;
     max-width: 40%;
@@ -24,6 +25,24 @@
     &:hover .card-title {
         color: #007bff;
     
+    }
+
+    @media(max-width: $widescreen) {
+        max-height: 190px;
+        max-width: 350px;
+    }
+
+    @media(max-width: $in-between) {
+        max-width: 310px;
+    }
+
+
+    @media(max-width: $small-screen) {
+        max-height: 150px;
+        max-width: 520px;
+        margin: 20px 0;
+
+
     }
 }
 
@@ -171,6 +190,7 @@
         @media(max-width: $small-screen) {
             width: 95%;
             min-width: 455px;
+            max-width: 555px;
         }
     }
 
@@ -296,4 +316,86 @@
     .portfolio-link {
         margin: 5px;
     }
+}
+
+
+
+/*------------------------------------------------
+               TEAM CARDS
+------------------------------------------------*/
+
+.team-card {
+    @include flex(column, center, center);
+    margin: 15px 15px;
+    
+
+    &:hover .team-bg {
+        opacity: 0.5;
+        transition: all ease-in-out 0.3s;
+    }
+
+    &:hover .team-description-container {
+        transition: all ease-in-out 0.3s;
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+.team-img-container {
+    @include teamCards;
+    position: relative;
+
+    img {
+        height: 280px;
+
+        @media(max-width: $in-between) {
+            height: 350px;
+        }
+
+        @media(max-width: $small-screen) {
+            height: 550px;
+        }
+    }
+}
+
+
+.team-description-container {
+    @include flex(column, center, center);
+    @include teamCards;
+    position: absolute;
+    color: $color-white;
+    transform: translateY(20px);
+    opacity: 0;
+
+    h4 {
+        font-size: $subtitle-font-size;
+        padding: 5px;
+    }
+
+    p {
+        font-size: 13px;
+        padding: 0px 0 20px 0;
+    }
+
+    a {
+        color: $color-white;
+        font-size: $subtitle-font-size;
+        padding: 0 5px;
+        transition: all ease-in-out 0.3s;
+
+        &:hover {
+            color: $color-nav-hover;
+            transition: all ease-in-out 0.3s;
+        }
+    }    
+
+}
+
+.team-bg {
+    @include teamCards;
+    background-color: $color-blue-background;
+    opacity: 0;
+    position: absolute;
+    transition: all ease-in-out 0.3s;
+
 }
