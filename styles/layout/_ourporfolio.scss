@@ -8,8 +8,11 @@
     h2 {
         @include sectionTitles;
     }
+    
+    @media(max-width: $small-screen) {
+        padding-bottom: 40px;
+    }
 }
-
 
 .portfolio-select-container {
     @include flex(row, center, center);

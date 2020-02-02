@@ -8,16 +8,26 @@
 
     h2 {
         @include sectionTitles;
+        
     }
-}
-
-.slider-container {
-    @include flex(row, center, flex-start);
-    height: 45vh;
-    width: 100%;
 
     @media(max-width: $small-screen) {
         height: 70vh;  
+        @include flex(column, space-evenly, center);
+        padding: 50px 0;
+    
+   }
+}
+
+
+.slider-container {
+    @include flex(row, center, flex-start);
+    height: 30vh;
+    width: 100%;
+    margin: 20px 0;
+
+    @media(max-width: $small-screen) {
+        height: 50vh;  
         width: 100%;
     
              

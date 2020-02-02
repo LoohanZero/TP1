@@ -1,91 +1,42 @@
 #contactus {
-    @include flex(column, center, center);
-    padding-top: 100px;
+    @include flex(column, space-evenly, center);
+    padding: 100px 0;
+    height: 70vh;
 
     h2 {
         @include sectionTitles;
-        margin-bottom: 70px;
-        
+    }
+
+    @media(max-width: $widescreen) {
+        height: 100%;
     }
 }
 
 .contact-container {
     @include flex(row, center, flex-start);
     width: 95%;
+
+    @media(max-width: $widescreen) {
+        @include flex(column, center, center);
+        width: 100%;
+    }
 }
 
 .contact-map {
     width: 50%;
-}
 
 
-.form-container {
-    @include flex(column, space-between, space-between);
-    box-sizing: border-box;
-    width: 50%;
-    padding: 0 30px;
-    height: 330px;
-}
-
-.contact-info-container {
-    @include flex(row, space-between, flex-start);
-    height: 15%;
-}
-
-.contact-info {
-    @include flex(row, center, center);
-    flex-grow: 1;
-
-
-    i {
-        font-size: 25px;
-        color: $color-nav-hover;
+    @media(max-width: $widescreen) {
+        width: 70%;
     }
 
-    p {
-        line-height: 28px;
-        padding: 0 15px;
+    @media(max-width: $small-screen) {
+        @include flex;
+        width: 95%;
     }
-}
-.contact-address {
-    flex-grow: 2;
-    justify-content: flex-start;
+
 }
 
-.form-input-container {
-    @include flex(column, space-between, space-between);
-    height: 85%;
-}
-
-.form-contact {
-    @include flex(row, space-between, space-between);
-   
-}
-
-
-.form-name {
-    width: 48%;
-
-    input {
-       @include input; 
-    }
-}
-
-.form-sendus {
-
-    input {
-        @include input;
-    }
-}
-
-.form-textus {
-
-    textarea {
-        @include input;
-        
-    }
-}
-
-.form-btn {
-    @include flex(row, center, center);
+iframe {
+    width: 100%;
 }

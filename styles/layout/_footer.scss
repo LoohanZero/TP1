@@ -1,0 +1,195 @@
+
+footer {
+    @include flex(column, center, center);
+    height: 100%;
+    background-color: $color-darkerblue;
+    color: $color-lighterblue;
+    font-family: $secondary-font;
+}
+
+
+.footer-section {
+    @include flex(row, center, flex-start);
+    width: $section-width;
+    padding: 50px 0;
+ 
+    @media(max-width: $in-between) {
+        @include flex(column, center, center);
+        height: 50%;
+    }
+
+}
+.sectionone,
+.sectiontwo {
+    @include flex;
+    width: 50%;
+
+    @media(max-width: $in-between) {
+        @include flex(row, center, flex-start);
+        height: 50%;
+        width: 100%;
+        padding-bottom: 40px;
+    }
+
+    @media(max-width: $small-screen) {
+        @include flex(column, center, flex-start);
+    
+    }
+}
+
+.footer-intro {
+    width: 25%;
+    flex-grow: 1;
+    box-sizing: border-box;
+    padding-right: 50px;
+
+      
+    h3 {
+        font-size: 34px;
+        color: $color-white;
+        font-weight: 400;
+        padding-bottom: $p-20;
+    }
+    p {
+        font-size: 13px;
+        line-height: $p-line-height;
+    }
+
+    @media(max-width: $small-screen) {
+        @include flex(column, center, center);
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+
+    }
+}
+
+.footer-useful {
+    width: 10%;
+    flex-grow: 1;
+    box-sizing: border-box;
+    
+    h4 {
+        color: $color-white;
+        padding-bottom: 20px;
+    }
+
+    li {
+        padding: 10px 0;
+        font-family: $default-font;
+    }
+    a {
+        color: $color-lighterblue;
+        transition: all ease-in-out 0.3s;
+        
+
+        &:hover {
+            color: $color-nav-hover;
+            transition: all ease-in-out 0.3s;
+        }
+    }
+
+    @media(max-width: $small-screen) {
+        @include flex(column, center, center);
+        width: 100%;
+        text-align: center;
+        padding: 50px 0;
+    
+    }
+
+}
+
+.footer-contact {
+    flex-grow: 1;
+    width: 15%;
+    box-sizing: border-box;
+
+    h4 {
+        color: $color-white;
+        padding-bottom: 20px;
+    }
+
+    p {
+        line-height: $p-line-height;
+        font-family: $default-font;
+        padding-top: 10px;
+    }
+
+    @media(max-width: $small-screen) {
+        @include flex(column, center, center);
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+        padding-bottom: 50px;
+
+    }
+}
+
+
+.footer-newsletter {
+    width: 15%;
+    flex-grow: 1;
+    box-sizing: border-box;
+
+    h4 {
+        padding-bottom: 30px;
+    }
+
+    p {
+        font-family: $default-font;
+        padding-bottom: 30px;
+    }
+
+    @media(max-width: $small-screen) {
+        @include flex(column, center, center);
+        width: 100%;
+        text-align: center;
+        padding-right: 0;
+        padding-bottom: 0px;
+
+    }
+}
+
+.footer-subscribe {
+    @include flex(row, flex-start, center);
+
+    #footer {
+        @include input(65%);
+        margin: 0;
+        padding: 0 0 0 8px;
+        height: 33px;
+        border: none;
+        border-right: none;
+    }
+
+    @media(max-width: $small-screen) {
+        width: 100%;
+
+    }
+ 
+}
+
+.footer-copyright {
+    @include flex(column, center, center);
+
+    background-color: $color-footer;
+    height: 90px;
+    width: 100%;
+    font-family: $default-font;
+
+    a {
+        color: $color-white;
+        transition: all ease-in-out 0.3s;
+
+
+        &:hover {
+            color: $color-nav-hover;
+            transition: all ease-in-out 0.3s;
+        }
+    }
+
+    p:nth-child(2) {
+        font-size: 13px;
+    }
+}
+

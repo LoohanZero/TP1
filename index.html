@@ -164,7 +164,7 @@
                     </div>
                 </li>
                 <li class="aside-item">
-                    <a class="aside-nav-link" href="#contact">Contact Us</a>
+                    <a class="aside-nav-link" href="#contactus">Contact Us</a>
                 </li>
             </ul>
         </nav>
@@ -648,6 +648,10 @@
 
                 <ul class="slider">
                     <li class="slider-option">
+                        
+                        <input type="radio" name="testimonials" id="">
+                        <div class="t-button"></div>
+
                         <div class="testimonial-container testimonial1">
                             <img src="img/testimonial-1.jpg" alt="" class="">
 
@@ -667,12 +671,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="t-input">
-                            <input type="radio" name="testimonials" id="">
-                            <div class="t-button"></div>
-                        </div>
                     </li>
+
                     <li class="slider-option">
+
+                        <input type="radio" name="testimonials" id="">
+                        <div class="t-button"></div>
+
                         <div class="testimonial-container testimonial2">
                             <img src="img/testimonial-2.jpg" alt="" class="">
 
@@ -691,12 +696,13 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="t-input">
-                            <input type="radio" name="testimonials" id="">
-                            <div class="t-button"></div>
-                        </div>
                     </li>
+
                     <li class="slider-option">
+
+                        <input type="radio" name="testimonials" id="">
+                        <div class="t-button"></div>
+
                         <div class="testimonial-container testimonial3">
                             <img src="img/testimonial-3.jpg" alt="" class="">
 
@@ -714,12 +720,12 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="t-input">
-                            <input type="radio" name="testimonials" id="">
-                            <div class="t-button"></div>
-                        </div>
                     </li>
                     <li class="slider-option">
+
+                        <input type="radio" name="testimonials" id="">
+                        <div class="t-button"></div>
+
                         <div class="testimonial-container testimonial4">
                             <img src="img/testimonial-4.jpg" alt="" class="">
 
@@ -737,12 +743,11 @@
                                 </div>
                             </div>
                         </div>
-                        <div class="t-input">
-                            <input type="radio" name="testimonials" id="">
-                            <div class="t-button"></div>
-                        </div>
                     </li>
                     <li class="slider-option">
+                        <input type="radio" name="testimonials" id="">
+                        <div class="t-button"></div>
+
                         <div class="testimonial-container testimonial5">
                             <img src="img/testimonial-5.jpg" alt="" class="">
 
@@ -760,10 +765,6 @@
                                     </p>
                                 </div>
                             </div>
-                        </div>
-                        <div class="t-input">
-                            <input type="radio" name="testimonials" id="">
-                            <div class="t-button"></div>
                         </div>
                     </li>
 
@@ -930,29 +931,112 @@
 
                         <div class="form-contact">
                             <div class="form-name">
-                                <input type="text" name="" id="name" placeholder="Your Name">
+                                <input type="text" name="" id="name" placeholder="Your Name" minlength="4" required>
+                                <div class="invalid-disclaimer">
+                                    <p>Please enter at least 4 chars</p>
+                                </div>
                             </div>
                             <div class="form-name">
-                                <input type="email" name="" id="email" placeholder="Your Email">
+                                <input type="email" name="" id="email" placeholder="Your Email" required>
+                                <div class="invalid-disclaimer">
+                                    <p>Please enter a valid email</p>
+                                </div>
                             </div>
                         </div>
 
                         <div class="form-sendus">
-                            <input type="text" name="" id="subject" placeholder="Subject">
+                            <input type="text" name="" id="subject" placeholder="Subject" minlength="8" required>
+                            <div class="invalid-disclaimer">
+                                <p>Please enter at least 8 chars of subject</p>
+                            </div>
                         </div>
 
                         <div class="form-textus">
-                            <textarea type="textarea" name="" id="" rows="7" placeholder="Message"></textarea>
+                            <textarea type="textarea" name="" id="" rows="7" placeholder="Message" minlength="10"
+                                required></textarea>
+                            <div class="invalid-disclaimer">
+                                <p>Please write something for us</p>
+                            </div>
                         </div>
                         <div class="form-btn">
                             <button class="send">Send Message</button>
                         </div>
-
                     </form>
                 </div>
-
             </div>
         </section>
+
+
+        <footer>
+            <div class="footer-section">
+                <div class="sectionone">
+                    <div class="footer-intro">
+                        <h3>WAYNE</h3>
+                        <p>Cras fermentum odio eu feugiat lide par naso tierra. Justo eget nada terra videa magna derita
+                            valies
+                            darta donna mare fermentum iaculis eu non diam phasellus. Scelerisque felis imperdiet proin
+                            fermentum leo. Amet volutpat consequat mauris nunc congue.</p>
+                    </div>
+                    <div class="footer-useful">
+                        <h4>USEFUL LINKS</h4>
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#aboutus">About us</a></li>
+                            <li><a href="#services">Services</a></li>
+                            <li><a href="">Terms of service</a></li>
+                            <li><a href="">Privacy policy</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="sectiontwo">
+                    <div class="footer-contact">
+                        <h4>CONTACT US</h4>
+
+                        <p> A108 Adam Street<br>
+                            New York, NY 535022<br>
+                            United States</p>
+                        <p><strong>Phone: </strong> +1 5589 55488 55</p>
+                        <p><strong>Email: </strong>info@example.com</p>
+                        <div class="footer-icons">
+
+                            <a>
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a>
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a>
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a>
+                                <i class="fab fa-google-plus-g"></i>
+                            </a>
+                            <a>
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="footer-newsletter">
+                        <h4>OUR NEWSLETTER</h4>
+                        <p>Tamen quem nulla quae legam multos aute sint culpa legam noster magna veniam enim veniam
+                            illum
+                            dolore legam minim quorum culpa amet magna export quem marada parida nodela caramase seza.
+                        </p>
+                        <form class="footer-subscribe">
+                            <input type="email" name="" id="footer">
+                            <input class="btn-suscribe" type="submit" value="Subscribe">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-copyright">
+                <p>© Copyright <strong>Wayne Enterprises</strong>. All Rights Reserved.</p>
+                <p> Designed by <a href="https://github.com/LoohanZero" target=”_blank”>LoohanZero</a>.</p>
+
+            </div>
+        </footer>
 
     </main>
 </body>

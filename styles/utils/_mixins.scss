@@ -97,10 +97,44 @@
 }
 
 
-@mixin input {
+@mixin input ($input-width: 100%) {
     padding: 8px;
     font-size: $default-font-size;
     border: 1px solid $color-input;
-    width: 100%;
+    width: $input-width;
     font-family: inherit;
+    outline: none;
+    transition: all ease-in-out 0.3s;
+
+    &:focus {
+        border: none;
+    }
+
+    &:focus-within {
+        border: 1px solid #80bdff;
+        transition: all ease-in-out 0.3s;
+    }
+
+    &:invalid:not(:placeholder-shown)  ~ .invalid-disclaimer {
+        height: 20px;
+        transition: all ease-in-out 0.3s;
+       
+     }
+}
+
+@mixin footerIcon {
+    @include flex;
+    width: 36px;
+    height: 36px;
+    background-color: $color-nav-hover;
+    border-radius: 50%;
+    margin-right: 7px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+
+
+    &:hover {
+        background-color: $color-icon-hover;
+        transition: all ease-in-out 0.3s;
+    }
 }
