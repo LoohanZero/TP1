@@ -9,6 +9,7 @@
     @media(max-width: $small-screen) {
         width: 95%;
         height: 400px;
+        max-width: 650px;
        
     }
     
@@ -47,24 +48,40 @@
         transform: translateX(-737px);
         transition: all ease-in-out 0.3s;
         z-index: 3;
+
+        @media(max-width: $small-screen) {
+            transform: translateX(-648px);
+        }
     }
 
     input:checked ~ .testimonial3 {
         transform: translateX(-759px);
         transition: all ease-in-out 0.3s;
         z-index: 5;
+
+        @media(max-width: $small-screen) {
+            transform: translateX(-670px);
+        }
     }
 
     input:checked ~ .testimonial4 {
         transform: translateX(-782px);
         transition: all ease-in-out 0.3s;
         z-index: 7;
+
+        @media(max-width: $small-screen) {
+            transform: translateX(-693px);
+        }
     }
 
     input:checked ~ .testimonial5 {
         transform: translateX(-836px);
         transition: all ease-in-out 0.3s;
         z-index: 1;
+
+        @media(max-width: $small-screen) {
+            transform: translateX(-747px);
+        }
 
     }
 
@@ -106,6 +123,7 @@
     @media(max-width: $small-screen) {
         @include flex(column, center, center);
         height: 400px;
+        max-width: 565px;
 
 
     }
@@ -155,6 +173,10 @@
         opacity: 1; 
         left: -314px; 
         
+        @media(max-width: $small-screen) {
+            left: -225px;
+        }
+        
     }
 
     .testimonial2 {
@@ -162,6 +184,8 @@
         top: 0;
         opacity:1;
         width: 731px;
+
+        
     
         
     }

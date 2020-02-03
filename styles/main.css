@@ -141,6 +141,12 @@ button.ourservices:hover {
   color: white;
   font-family: inherit;
   font-size: 16px;
+  cursor: pointer;
+  transition: all ease-in-out 0.3s;
+}
+.send:hover {
+  background-color: #0067d5;
+  transition: all ease-in-out 0.3s;
 }
 
 /*-----------------------------------------------
@@ -828,6 +834,7 @@ ul.aside-list-deepdropdown {
   .slider {
     width: 95%;
     height: 400px;
+    max-width: 650px;
   }
 }
 
@@ -860,20 +867,40 @@ ul.aside-list-deepdropdown {
   transition: all ease-in-out 0.3s;
   z-index: 3;
 }
+@media (max-width: 770px) {
+  .slider-option input:checked ~ .testimonial2 {
+    transform: translateX(-648px);
+  }
+}
 .slider-option input:checked ~ .testimonial3 {
   transform: translateX(-759px);
   transition: all ease-in-out 0.3s;
   z-index: 5;
+}
+@media (max-width: 770px) {
+  .slider-option input:checked ~ .testimonial3 {
+    transform: translateX(-670px);
+  }
 }
 .slider-option input:checked ~ .testimonial4 {
   transform: translateX(-782px);
   transition: all ease-in-out 0.3s;
   z-index: 7;
 }
+@media (max-width: 770px) {
+  .slider-option input:checked ~ .testimonial4 {
+    transform: translateX(-693px);
+  }
+}
 .slider-option input:checked ~ .testimonial5 {
   transform: translateX(-836px);
   transition: all ease-in-out 0.3s;
   z-index: 1;
+}
+@media (max-width: 770px) {
+  .slider-option input:checked ~ .testimonial5 {
+    transform: translateX(-747px);
+  }
 }
 
 .t-button {
@@ -918,6 +945,7 @@ ul.aside-list-deepdropdown {
     justify-content: center;
     align-items: center;
     height: 400px;
+    max-width: 565px;
   }
 }
 
@@ -962,6 +990,11 @@ ul.aside-list-deepdropdown {
   top: 0;
   opacity: 1;
   left: -314px;
+}
+@media (max-width: 770px) {
+  .testimonial1 {
+    left: -225px;
+  }
 }
 
 .testimonial2 {

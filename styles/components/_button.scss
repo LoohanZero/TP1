@@ -71,6 +71,13 @@ button.ourservices {
     color: $color-white;
     font-family: inherit;
     font-size: 16px;
+    cursor: pointer;
+    transition: all ease-in-out 0.3s;
+
+    &:hover {
+        background-color: $color-icon-hover;
+        transition: all ease-in-out 0.3s;
+    }
     
 }
 
