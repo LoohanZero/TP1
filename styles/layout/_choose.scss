@@ -39,6 +39,7 @@
 
     @media(max-width: $widescreen) {
         width: 100%;
+        justify-content: space-evenly;
     }
     @media(max-width: $in-between) {
         @include flex(column, center, center);

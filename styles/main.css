@@ -1734,6 +1734,7 @@ ul.aside-list-dropdown {
 @media (max-width: 1200px) {
   .chooseus-cards-container {
     width: 100%;
+    justify-content: space-evenly;
   }
 }
 @media (max-width: 990px) {
