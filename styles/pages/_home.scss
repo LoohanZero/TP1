@@ -18,7 +18,6 @@ body {
    main {
     @media(max-width: $smallest-screen) {
         @include flex(column, center, center);
-        padding-left: 70px;
         
        }
    }
