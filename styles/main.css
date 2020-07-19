@@ -1490,7 +1490,7 @@ ul.aside-list-dropdown {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 100%;
+  width: 75%;
 }
 @media (max-width: 900px) {
   .introduction-container {

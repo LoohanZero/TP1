@@ -11,7 +11,7 @@
 }
 .introduction-container {
     @include flex(row, space-between, center);
-    width: 100%;
+    width: 75%;
     
 
     @media(max-width: $mobile) {
