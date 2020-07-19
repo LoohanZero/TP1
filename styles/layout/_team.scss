@@ -12,7 +12,9 @@
             @include sectionSubtitles;
             width: 35%;
         }
-
+ @media(max-width: $smallest-screen) {
+    padding-top: 200px;
+ }
 }
 
 

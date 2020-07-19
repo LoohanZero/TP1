@@ -2057,6 +2057,11 @@ ul.aside-list-dropdown {
   font-size: 15px;
   width: 35%;
 }
+@media (max-width: 550px) {
+  #team {
+    padding-top: 200px;
+  }
+}
 
 .team-cards-container {
   display: flex;
