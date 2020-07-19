@@ -1,21 +1,22 @@
 .section-testimonials {
     @include flex(column, center, center);
-    height: 100%;
+    height: 70vh;
     width: 100%;
     background-color: $color-lighterblue;
     box-shadow: inset 0px 0px 12px 0px rgba(0, 0, 0, 0.1);
     padding-top: 50px;
+    ;
 
     h2 {
         @include sectionTitles;
         
     }
-
-    @media(max-width: $small-screen) {
-        height: 70vh;  
-        @include flex(column, space-evenly, center);
-        padding: 50px 0;
     
+    @media(max-width: $small-screen) {
+        height: 100vh;  
+        @include flex(column, center, center);
+        padding: 50px 0;
+        
    }
 }
 

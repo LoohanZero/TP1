@@ -5,14 +5,15 @@
     position: relative;
     margin-block-start: 0;
     overflow: hidden;
-    
+
     @media(max-width: $small-screen) {
         width: 95%;
         height: 400px;
         max-width: 650px;
-       
+        overflow: hidden;
+
     }
-    
+
 }
 
 .slider-option {
@@ -33,54 +34,54 @@
 
     }
 
-    input:checked + .t-button{
+    input:checked+.t-button {
         background-color: $color-nav-hover;
         transition: all ease-in-out 0.3s;
     }
 
-    input:checked + .testimonial1 {
+    input:checked+.testimonial1 {
         // transform: translateX(720px);
         z-index: 8;
-    
+
     }
 
-    input:checked ~ .testimonial2 {
-        transform: translateX(-737px);
+    input:checked~.testimonial2 {
+        transform: translateX(-1007px);
         transition: all ease-in-out 0.3s;
         z-index: 3;
 
         @media(max-width: $small-screen) {
-            transform: translateX(-648px);
+            transform: translateX(-718px);
         }
     }
 
-    input:checked ~ .testimonial3 {
-        transform: translateX(-759px);
+    input:checked~.testimonial3 {
+        transform: translateX(-1029px);
         transition: all ease-in-out 0.3s;
         z-index: 5;
 
         @media(max-width: $small-screen) {
-            transform: translateX(-670px);
+            transform: translateX(-740px);
         }
     }
 
-    input:checked ~ .testimonial4 {
-        transform: translateX(-782px);
+    input:checked~.testimonial4 {
+        transform: translateX(-1052px);
         transition: all ease-in-out 0.3s;
         z-index: 7;
 
         @media(max-width: $small-screen) {
-            transform: translateX(-693px);
+            transform: translateX(-763px);
         }
     }
 
-    input:checked ~ .testimonial5 {
-        transform: translateX(-836px);
+    input:checked~.testimonial5 {
+        transform: translateX(-1106px);
         transition: all ease-in-out 0.3s;
         z-index: 1;
 
         @media(max-width: $small-screen) {
-            transform: translateX(-747px);
+            transform: translateX(-817px);
         }
 
     }
@@ -102,16 +103,17 @@
         top: 357px;
         z-index: 15;
 
-    } 
+    }
 }
 
 .testimonial-container {
-    @include flex(row, center,center);
+    @include flex(row, center, center);
     position: absolute;
     background-color: $color-lighterblue;
-    width: 730px;
+    width: 1000px;
     height: 150px;
-    transition: all ease-in-out 0.3s;
+    transition: all ease-in-out 0.3s 0.3s;
+    padding-left: 270px;
 
     img {
         height: 120px;
@@ -121,9 +123,10 @@
     }
 
     @media(max-width: $small-screen) {
+        padding: 0;
         @include flex(column, center, center);
         height: 400px;
-        max-width: 565px;
+        max-width: 700px;
 
 
     }
@@ -144,7 +147,7 @@
         }
     }
 
-    & > p {
+    &>p {
         color: $color-grey;
         font-family: $secondary-font;
 
@@ -154,61 +157,66 @@
     }
 }
 
-    .t-description {
-        padding: 15px 0;
-        font-style: italic;
-        font-weight: bold;
-        opacity: 0.8;
-        line-height: $p-line-height;
-    
-        @media(max-width: $small-screen) {
-            text-align: center;
-        }
+.t-description {
+    padding: 15px 0;
+    font-style: italic;
+    font-weight: bold;
+    opacity: 0.8;
+    line-height: $p-line-height;
+    max-width: 540px;
+
+    @media(max-width: $small-screen) {
+        text-align: center;
+        max-width: 400px;
+        margin:auto;
+    }
+}
+
+
+
+.testimonial1 {
+    top: 0;
+    opacity: 1;
+    left: -585px;
+
+    @media(max-width: $small-screen) {
+        left: -295px;
     }
 
-    
+}
 
-    .testimonial1 {
-        top: 0;
-        opacity: 1; 
-        left: -314px; 
-        
-        @media(max-width: $small-screen) {
-            left: -225px;
-        }
-        
-    }
+.testimonial2 {
+    left: 400px;
 
-    .testimonial2 {
-        left: 400px;
-        top: 0;
-        opacity:1;
-        width: 731px;
+    top: 0;
+    opacity: 1;
+    // width: 731px;
 
-        
-    
-        
-    }
 
-    .testimonial3 {
-        left: 400px;
-        top: 0;
-        opacity:1;
-        
-    }
 
-    .testimonial4 {
-        left: 400px;
-        top: 0;
-        opacity:1;
 
-    
-    }
-    .testimonial5 {
-        // left: -415px;
-        left: 430px;
-        top: 0;
-        opacity:1;
-    
-        
-    }
+}
+
+.testimonial3 {
+    left: 400px;
+    top: 0;
+    opacity: 1;
+
+}
+
+.testimonial4 {
+    left: 400px;
+    top: 0;
+    opacity: 1;
+
+
+}
+
+.testimonial5 {
+    // left: -415px;
+    left: 430px;
+    top: 0;
+    opacity: 1;
+
+
+}
