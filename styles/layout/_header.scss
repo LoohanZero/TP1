@@ -4,26 +4,31 @@
     height: 80px;
     width: 100%;
     position: fixed;
+    top: 0;
+    left: 0;
     z-index: 500;
     box-shadow: 1px 1px 35px 4px rgba(0, 0, 0, 0.2);
 
 
     @media(max-width: $in-between) {
-        @include flex(center, space-around)
+        @include flex(center, space-around);
     }
+
 }
 
-.nav-icon {   
+
+.nav-icon {
     img {
-    height: 25px;
+        height: 25px;
     }
 }
 
 .navbar {
     ul {
-    list-style: none;
+        list-style: none;
     }
-    a  {
+
+    a {
         font-size: $default-font-size;
         color: $color-nav;
         padding: $p-20;
@@ -35,11 +40,13 @@
 .nav-list {
     @include flex(center, center);
 }
+
 .nav-link {
     font-family: $secondary-font;
     font-weight: 500;
     transition: all ease-in-out 0.3s;
 }
+
 .nav-link:hover {
     color: $color-nav-hover;
     transition: all ease-in-out 0.3s;
@@ -55,6 +62,7 @@
         display: none;
     }
 }
+
 .icon-responsive {
     display: none;
 

@@ -7,6 +7,10 @@
     
     img {
         width: 550px;
+
+        @media(max-width: $smallest-screen) {
+            width: 300px;
+        }
     }
 }
 
@@ -39,6 +43,11 @@
 
     @media(max-width: $mobile) {
         width: 85%;
+
+    }
+
+    @media(max-width: $smallest-screen) {
+        width: 70%;
 
     }
 }
@@ -119,7 +128,10 @@
         width: 100%;
         margin-bottom: 0;
     }
+    @media(max-width: $smallest-screen) {
+        text-align: center;
 
+    }
     h3 {
         font-size: $big-icon-size;
         margin-bottom: 30px;
@@ -142,6 +154,10 @@
         padding-top: 30px;
         
     }
+    @media(max-width: $smallest-screen) {
+        margin: auto;
+        text-align: center;
+    }
 }
 
 .second-p {
@@ -151,6 +167,10 @@
     @media(max-width: $mobile) {
       order: 2;
       margin-top: 00px;
+    }
+
+    @media(max-width: $smallest-screen) {
+        margin-right: 0;
     }
     h3 {
         margin-top: 20px;

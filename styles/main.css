@@ -10,6 +10,23 @@ body {
   color: #444;
   font-size: 14px;
 }
+@media (max-width: 550px) {
+  body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media (max-width: 550px) {
+  body main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-left: 70px;
+  }
+}
 
 a {
   text-decoration: none;
@@ -571,6 +588,13 @@ ul.aside-list-deepdropdown {
     max-width: 555px;
   }
 }
+@media (max-width: 550px) {
+  .portfolio-card-container {
+    width: 70%;
+    min-width: 370px;
+    max-width: 370px;
+  }
+}
 
 .portfolio-img-container {
   width: 350px;
@@ -590,6 +614,11 @@ ul.aside-list-deepdropdown {
     min-width: 455px;
   }
 }
+@media (max-width: 550px) {
+  .portfolio-img-container img {
+    min-width: 370px;
+  }
+}
 @media (max-width: 1200px) {
   .portfolio-img-container {
     width: 290px;
@@ -600,6 +629,12 @@ ul.aside-list-deepdropdown {
   .portfolio-img-container {
     width: 95%;
     min-width: 455px;
+  }
+}
+@media (max-width: 550px) {
+  .portfolio-img-container {
+    width: 70%;
+    min-width: 370px;
   }
 }
 
@@ -625,6 +660,12 @@ ul.aside-list-deepdropdown {
   .portfolio-info-bg {
     width: 95%;
     min-width: 455px;
+  }
+}
+@media (max-width: 550px) {
+  .portfolio-info-bg {
+    width: 70%;
+    min-width: 370px;
   }
 }
 
@@ -654,6 +695,12 @@ ul.aside-list-deepdropdown {
   .portfolio-info {
     width: 95%;
     min-width: 455px;
+  }
+}
+@media (max-width: 550px) {
+  .portfolio-info {
+    width: 70%;
+    min-width: 370px;
   }
 }
 .portfolio-info a {
@@ -1237,6 +1284,8 @@ ul.aside-list-deepdropdown {
   height: 80px;
   width: 100%;
   position: fixed;
+  top: 0;
+  left: 0;
   z-index: 500;
   box-shadow: 1px 1px 35px 4px rgba(0, 0, 0, 0.2);
 }
@@ -1307,6 +1356,12 @@ ul.aside-list-deepdropdown {
   right: 20px;
   color: white;
   z-index: 9999;
+  display: none;
+}
+@media (max-width: 550px) {
+  .close {
+    right: 40px;
+  }
 }
 .close .fas.fa-times {
   font-size: 20px;
@@ -1326,6 +1381,12 @@ ul.aside-list-deepdropdown {
   padding-top: 10px;
   overflow: auto;
 }
+@media (max-width: 550px) {
+  #sidebar {
+    width: 250px;
+    transform: translateX(-250px);
+  }
+}
 #sidebar:target {
   display: block;
   height: 100%;
@@ -1333,7 +1394,7 @@ ul.aside-list-deepdropdown {
   transition: all 0.3s;
   z-index: 9997;
 }
-#sidebar:target + .background-close {
+#sidebar:target ~ .background-close {
   display: block;
   position: fixed;
   height: 100%;
@@ -1344,6 +1405,9 @@ ul.aside-list-deepdropdown {
   left: 0;
   cursor: default;
   overflow: hidden;
+}
+#sidebar:target:target ~ .close {
+  display: block;
 }
 #sidebar .background-close {
   display: none;
@@ -1357,13 +1421,6 @@ ul.aside-list-deepdropdown {
   left: 0;
   cursor: default;
   overflow: hidden;*/
-}
-#sidebar .close {
-  color: white;
-  font-size: 18px;
-  position: absolute;
-  top: 0;
-  right: 0;
 }
 #sidebar .aside-item {
   line-height: 40px;
@@ -1388,6 +1445,11 @@ ul.aside-list-dropdown {
   justify-content: space-between;
   align-items: center;
 }
+@media (max-width: 550px) {
+  .aside-icon-item {
+    width: 200px;
+  }
+}
 .aside-icon-item::after {
   content: "";
   font-family: "Font Awesome 5 Free";
@@ -1404,6 +1466,12 @@ ul.aside-list-dropdown {
   color: #007bff;
 }
 
+@media (max-width: 550px) {
+  .aside-icon-deep {
+    width: 180px;
+  }
+}
+
 .introduction {
   padding-top: 80px;
   background-color: white;
@@ -1413,7 +1481,7 @@ ul.aside-list-dropdown {
   z-index: 0;
   height: 100vh;
   display: flex;
-  flex-direction: center;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
 }
@@ -1423,7 +1491,7 @@ ul.aside-list-dropdown {
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
-  width: 75%;
+  width: 100%;
 }
 @media (max-width: 900px) {
   .introduction-container {
@@ -1451,6 +1519,11 @@ ul.aside-list-dropdown {
     align-items: center;
   }
 }
+@media (max-width: 550px) {
+  .introduction-left {
+    max-width: 300px;
+  }
+}
 .introduction-left h1 {
   font-size: 48px;
   font-weight: bold;
@@ -1463,6 +1536,12 @@ ul.aside-list-dropdown {
     line-height: 60px;
   }
 }
+@media (max-width: 550px) {
+  .introduction-left h1 {
+    line-height: 40px;
+    font-size: 35px;
+  }
+}
 .introduction-left .highlight {
   color: #74b5fc;
   text-decoration: underline;
@@ -1471,9 +1550,23 @@ ul.aside-list-dropdown {
 .introduction-btns {
   padding: 30px;
 }
+@media (max-width: 550px) {
+  .introduction-btns {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
 
 .img-right {
   height: 300px;
+}
+@media (max-width: 550px) {
+  .img-right {
+    height: 200px;
+    padding-bottom: 30px;
+  }
 }
 
 .section-aboutus {
@@ -1486,6 +1579,11 @@ ul.aside-list-dropdown {
 }
 .section-aboutus img {
   width: 550px;
+}
+@media (max-width: 550px) {
+  .section-aboutus img {
+    width: 300px;
+  }
 }
 
 .aboutus {
@@ -1525,6 +1623,11 @@ ul.aside-list-dropdown {
 @media (max-width: 900px) {
   .aboutus-container {
     width: 85%;
+  }
+}
+@media (max-width: 550px) {
+  .aboutus-container {
+    width: 70%;
   }
 }
 
@@ -1621,6 +1724,11 @@ ul.aside-list-dropdown {
     margin-bottom: 0;
   }
 }
+@media (max-width: 550px) {
+  .paragraph-container {
+    text-align: center;
+  }
+}
 .paragraph-container h3 {
   font-size: 24px;
   margin-bottom: 30px;
@@ -1642,6 +1750,12 @@ ul.aside-list-dropdown {
     padding-top: 30px;
   }
 }
+@media (max-width: 550px) {
+  .paragraph {
+    margin: auto;
+    text-align: center;
+  }
+}
 
 .second-p {
   margin-left: 0;
@@ -1651,6 +1765,11 @@ ul.aside-list-dropdown {
   .second-p {
     order: 2;
     margin-top: 0px;
+  }
+}
+@media (max-width: 550px) {
+  .second-p {
+    margin-right: 0;
   }
 }
 .second-p h3 {
@@ -1716,6 +1835,11 @@ ul.aside-list-dropdown {
     align-items: center;
     max-width: 100%;
     margin: 0;
+  }
+}
+@media (max-width: 550px) {
+  .services-cards-container {
+    max-width: 85%;
   }
 }
 
@@ -1860,6 +1984,11 @@ ul.aside-list-dropdown {
   width: 75%;
   margin: 30px 0;
   width: 95%;
+}
+@media (max-width: 770px) {
+  .portfolio-cards-container {
+    width: 85%;
+  }
 }
 
 .section-testimonials {

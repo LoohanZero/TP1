@@ -8,8 +8,21 @@ body {
     background-color: $color-white;
     color: $default-font-color;
     font-size: $default-font-size;
+    
 
-   
+   @media(max-width: $smallest-screen) {
+    @include flex(column, center, center);
+    
+   }
+
+   main {
+    @media(max-width: $smallest-screen) {
+        @include flex(column, center, center);
+        padding-left: 70px;
+        
+       }
+   }
+
 }
 
 a {
@@ -20,6 +33,8 @@ a {
 section {
     height: 100vh;
     width: 100%;
+  
+
 }
 ul {
     list-style: none;

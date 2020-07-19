@@ -26,5 +26,8 @@
     margin: 30px 0;
     width: 95%;
 
+    @media(max-width: $small-screen) {
+        width: 85%;
+    }
 }
 

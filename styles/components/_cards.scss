@@ -44,6 +44,7 @@
 
 
     }
+    
 }
 
 .services-icon {
@@ -223,6 +224,12 @@
         min-width: 455px;
         max-width: 555px;
     }
+
+    @media(max-width: $smallest-screen) {
+        width: 70%;
+        min-width: 370px;
+        max-width: 370px;
+    }
 }
 
 .portfolio-img-container {
@@ -241,6 +248,10 @@
             width: 100%;
             min-width: 455px;
         }
+
+        @media(max-width: $smallest-screen) {
+            min-width: 370px;
+                    }
     }
 
     @media(max-width: $widescreen) {
@@ -251,6 +262,11 @@
     @media(max-width: $small-screen) {
         width: 95%;
         min-width: 455px;
+    }
+
+    @media(max-width: $smallest-screen) {
+        width: 70%;
+        min-width: 370px;
     }
 }
 
@@ -275,6 +291,11 @@
         width: 95%;
         min-width: 455px;
     }
+
+    @media(max-width: $smallest-screen) {
+        width: 70%;
+        min-width: 370px;
+    }
 }
 .portfolio-info {
     @include flex(column, center, center);
@@ -297,6 +318,11 @@
     @media(max-width: $small-screen) {
         width: 95%;
         min-width: 455px;
+    }
+
+    @media(max-width: $smallest-screen) {
+        width: 70%;
+        min-width: 370px;
     }
 
     a {

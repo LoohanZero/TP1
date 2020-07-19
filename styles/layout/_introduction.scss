@@ -5,18 +5,19 @@
     background-size: cover;
     background-repeat: repeat;
     z-index: 0;
-    height: 100vh;
+    height: 100vh;;
 
-    @include flex(center, center);
+    @include flex(row,center, center);
 }
 .introduction-container {
     @include flex(row, space-between, center);
-    width: $section-width;
+    width: 100%;
     
 
     @media(max-width: $mobile) {
         @include flex(column, center, center);
     }
+
 }
 .introduction-left {
     width: 500px;
@@ -28,6 +29,9 @@
         @include flex(column, center, center);
     }
 
+    @media(max-width: $smallest-screen) {
+        max-width: 300px;
+    }
 
     h1 {
         font-size: $main-title-size;
@@ -39,6 +43,10 @@
            text-align: center;
            line-height: 60px;
         }
+        @media(max-width: $smallest-screen) {
+            line-height: 40px;
+            font-size: 35px;
+         }
     
     }
 
@@ -51,8 +59,19 @@
 }
 .introduction-btns {
     padding: 30px;
+
+    @media(max-width: $smallest-screen) {
+        @include flex(column, center, center);
+    }
+
+
 }
 .img-right {
     height: 300px;
+
+    @media(max-width: $smallest-screen) {
+        height: 200px;
+        padding-bottom: 30px;
+    }
     
 }
