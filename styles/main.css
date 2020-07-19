@@ -1500,6 +1500,11 @@ ul.aside-list-dropdown {
     align-items: center;
   }
 }
+@media (max-width: 550px) {
+  .introduction-container {
+    padding-top: 100px;
+  }
+}
 
 .introduction-left {
   width: 500px;

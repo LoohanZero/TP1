@@ -5,20 +5,29 @@
     background-size: cover;
     background-repeat: repeat;
     z-index: 0;
-    height: 100vh;;
+    height: 100vh;
+    ;
 
-    @include flex(row,center, center);
+    @include flex(row, center, center);
+
+
 }
+
 .introduction-container {
     @include flex(row, space-between, center);
     width: 75%;
-    
+
 
     @media(max-width: $mobile) {
         @include flex(column, center, center);
     }
 
+    @media(max-width: $smallest-screen) {
+        padding-top: 100px;
+    }
+
 }
+
 .introduction-left {
     width: 500px;
     @include flex(column, space-evenly, flex-start);
@@ -40,14 +49,15 @@
         line-height: 50px;
 
         @media(max-width: $mobile) {
-           text-align: center;
-           line-height: 60px;
+            text-align: center;
+            line-height: 60px;
         }
+
         @media(max-width: $smallest-screen) {
             line-height: 40px;
             font-size: 35px;
-         }
-    
+        }
+
     }
 
     .highlight {
@@ -57,6 +67,7 @@
 
 
 }
+
 .introduction-btns {
     padding: 30px;
 
@@ -66,6 +77,7 @@
 
 
 }
+
 .img-right {
     height: 300px;
 
@@ -73,5 +85,5 @@
         height: 200px;
         padding-bottom: 30px;
     }
-    
+
 }
