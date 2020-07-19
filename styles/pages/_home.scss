@@ -8,8 +8,6 @@ body {
     background-color: $color-white;
     color: $default-font-color;
     font-size: $default-font-size;
-    @include flex(column, center, center);
-    overflow: hidden;
 
    
 }
