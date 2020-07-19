@@ -1484,6 +1484,11 @@ ul.aside-list-dropdown {
   justify-content: center;
   align-items: center;
 }
+@media (max-width: 550px) {
+  .introduction {
+    height: 100%;
+  }
+}
 
 .introduction-container {
   display: flex;
@@ -1502,7 +1507,8 @@ ul.aside-list-dropdown {
 }
 @media (max-width: 550px) {
   .introduction-container {
-    padding: 380px 0 100px 0;
+    height: 100%;
+    padding-top: 50px;
   }
 }
 

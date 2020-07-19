@@ -10,6 +10,12 @@
 
     @include flex(row, center, center);
 
+    @media(max-width: $smallest-screen) {
+        height: 100%;
+       
+        
+    }
+
 
 }
 
@@ -23,7 +29,8 @@
     }
 
     @media(max-width: $smallest-screen) {
-        padding: 380px 0 100px 0;
+        height: 100%;
+        padding-top: 50px;
         
     }
 
