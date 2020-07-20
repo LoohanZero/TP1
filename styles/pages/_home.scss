@@ -8,28 +8,28 @@ body {
     background-color: $color-white;
     color: $default-font-color;
     font-size: $default-font-size;
-    
 
-   @media(max-width: $smallest-screen) {
-    @include flex(column, center, center);
-    
-   }
 
-   main {
     @media(max-width: $smallest-screen) {
         @include flex(column, center, center);
-        
-       }
+
+    }
+
+    main {
+        @media(max-width: $smallest-screen) {
+            @include flex(column, center, center);
+
+        }
+
+        @media(max-width: $screen-400px) {
+            padding-left: 50px;
+
+        }
+    }
 
     @media(max-width: $screen-400px) {
-        padding-left: 50px;
-            
-           }
-   }
-
-   @media(max-width: $screen-400px) {
-    //    margin-right: -200px;
-   }
+        //    margin-right: -200px;
+    }
 
 
 }
@@ -44,21 +44,29 @@ section {
     width: 100%;
 
     @media(max-width: $screen-400px) {
-    //    margin-right: -70px;
-        
-       }
-  
+        //    margin-right: -70px;
+
+    }
+
+    &>p {
+        @media(max-width: $smallest-screen) {
+            width: 400px;
+
+        }
+    }
 
 }
+
 ul {
     list-style: none;
 
     ul {
         list-style: none;
+
         ul {
             list-style: none;
         }
-        
+
     }
 }
 
