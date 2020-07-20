@@ -22,14 +22,11 @@
 
     h2 {
         @include sectionTitles;
-       
+
     }
     p {
         @include sectionSubtitles; 
 
-        @media(max-width: $mobile) {
-            width: 100%;
-        }
     }
 
     

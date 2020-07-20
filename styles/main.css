@@ -26,7 +26,11 @@ body {
     align-items: center;
   }
 }
-
+@media (max-width: 400px) {
+  body main {
+    padding-left: 50px;
+  }
+}
 a {
   text-decoration: none;
 }
@@ -35,7 +39,6 @@ section {
   height: 100vh;
   width: 100%;
 }
-
 ul {
   list-style: none;
 }
@@ -418,6 +421,13 @@ ul.aside-list-deepdropdown {
     margin: 20px 0;
   }
 }
+@media (max-width: 400px) {
+  .services-card {
+    max-height: 200px;
+    max-width: 300px;
+    margin: 20px 0;
+  }
+}
 
 .services-icon {
   position: absolute;
@@ -556,6 +566,13 @@ ul.aside-list-deepdropdown {
     max-width: 555px;
   }
 }
+@media (max-width: 550px) {
+  .portfolio-card-container:hover .portfolio-info {
+    width: 70%;
+    min-width: 370px;
+    max-width: 370px;
+  }
+}
 .portfolio-card-container:hover .portfolio-info-bg {
   opacity: 0.5;
   width: 350px;
@@ -578,6 +595,13 @@ ul.aside-list-deepdropdown {
   .portfolio-card-container:hover .portfolio-info-bg {
     width: 95%;
     min-width: 455px;
+  }
+}
+@media (max-width: 550px) {
+  .portfolio-card-container:hover .portfolio-info-bg {
+    width: 70%;
+    min-width: 370px;
+    max-width: 370px;
   }
 }
 @media (max-width: 770px) {
@@ -1622,6 +1646,11 @@ ul.aside-list-dropdown {
     width: 100%;
   }
 }
+@media (max-width: 400px) {
+  .aboutus p {
+    max-width: 400px;
+  }
+}
 
 .aboutus-container {
   display: flex;
@@ -1811,6 +1840,16 @@ ul.aside-list-dropdown {
   font-size: 15px;
   padding-bottom: 20px;
 }
+@media (max-width: 900px) {
+  .services-section .services-sub {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .services-section .services-sub {
+    max-width: 400px;
+  }
+}
 
 .header-services {
   display: flex;
@@ -1893,6 +1932,16 @@ ul.aside-list-dropdown {
   text-align: center;
   font-size: 15px;
   color: white;
+}
+@media (max-width: 900px) {
+  .chooseus-header p {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .chooseus-header p {
+    max-width: 400px;
+  }
 }
 
 .chooseus-cards-container {
@@ -2068,6 +2117,16 @@ ul.aside-list-dropdown {
   font-size: 15px;
   width: 35%;
 }
+@media (max-width: 900px) {
+  #team .team-subtitle {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  #team .team-subtitle {
+    max-width: 400px;
+  }
+}
 @media (max-width: 550px) {
   #team {
     padding-top: 200px;
@@ -2116,6 +2175,16 @@ ul.aside-list-dropdown {
   width: 50%;
   text-align: center;
   font-size: 15px;
+}
+@media (max-width: 900px) {
+  .ourclients p {
+    width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .ourclients p {
+    max-width: 400px;
+  }
 }
 
 .clients-container {

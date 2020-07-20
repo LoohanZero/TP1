@@ -44,6 +44,11 @@
 
 
     }
+    @media(max-width: $screen-400px) {
+        max-height: 200px;
+        max-width: 300px;
+        margin: 20px 0;
+    }
     
 }
 
@@ -194,6 +199,12 @@
             min-width: 455px;
             max-width: 555px;
         }
+
+        @media(max-width: $smallest-screen) {
+            width: 70%;
+            min-width: 370px;
+            max-width: 370px;
+        }
     }
 
     &:hover .portfolio-info-bg {
@@ -217,6 +228,12 @@
             width: 95%;
             min-width: 455px;
         }
+        @media(max-width: $smallest-screen) {
+            width: 70%;
+            min-width: 370px;
+            max-width: 370px;
+        }
+     
     }
     
     @media(max-width: $small-screen) {

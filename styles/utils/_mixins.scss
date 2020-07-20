@@ -63,6 +63,8 @@
     text-align: center;
     font-weight: 500;
     margin-bottom: 30px;
+
+  
 }
 
 @mixin sectionSubtitles($subtitle-width: 50%) {
@@ -70,6 +72,14 @@
     width: $subtitle-width;
     text-align: center;
     font-size: $p-font-size;
+
+    @media(max-width: $mobile) {
+        width: 100%;
+    }
+    @media(max-width: $screen-400px) {
+        max-width: 400px;
+         
+     }
 }
 
 @mixin teamCards {

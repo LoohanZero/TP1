@@ -20,7 +20,17 @@ body {
         @include flex(column, center, center);
         
        }
+
+    @media(max-width: $screen-400px) {
+        padding-left: 50px;
+            
+           }
    }
+
+   @media(max-width: $screen-400px) {
+    //    margin-right: -200px;
+   }
+
 
 }
 
@@ -32,6 +42,11 @@ a {
 section {
     height: 100vh;
     width: 100%;
+
+    @media(max-width: $screen-400px) {
+    //    margin-right: -70px;
+        
+       }
   
 
 }
