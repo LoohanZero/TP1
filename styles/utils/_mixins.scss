@@ -20,11 +20,17 @@
     cursor: pointer;
     transition: ease all 0.3s;
 
+    @media(max-width: $screen-400px) {
+        height: 60px;
+    }
+    
     &:hover {
         background-color: #1445b3;
         border: 2px solid $color-white;
         transition: ease all 0.3s;
     }
+
+   
 }
 
 @mixin btn2 {
@@ -42,11 +48,16 @@
     cursor: pointer;
     transition: ease all 0.3s;
 
+    @media(max-width: $screen-400px) {
+        height: 60px;
+    }
     &:hover {
         background-color: #007bff;
         border: 2px solid #007bff;  
         transition: ease all 0.3s; 
     }
+
+
 }
 @mixin dropdown($width: 180px) {
     opacity: 0;

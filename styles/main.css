@@ -75,6 +75,11 @@ button.getstarted {
   cursor: pointer;
   transition: ease all 0.3s;
 }
+@media (max-width: 400px) {
+  button.getstarted {
+    height: 60px;
+  }
+}
 button.getstarted:hover {
   background-color: #1445b3;
   border: 2px solid white;
@@ -95,6 +100,11 @@ button.ourservices {
   font-weight: bold;
   cursor: pointer;
   transition: ease all 0.3s;
+}
+@media (max-width: 400px) {
+  button.ourservices {
+    height: 60px;
+  }
 }
 button.ourservices:hover {
   background-color: #007bff;
