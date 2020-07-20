@@ -28,7 +28,7 @@ body {
 }
 @media (max-width: 400px) {
   body main {
-    padding-left: 70px;
+    padding-left: 100px;
   }
 }
 a {
