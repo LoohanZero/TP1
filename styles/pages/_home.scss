@@ -22,7 +22,7 @@ body {
         }
 
         @media(max-width: $screen-400px) {
-            padding-left: 50px;
+            padding-left: 70px;
 
         }
     }
@@ -46,13 +46,6 @@ section {
     @media(max-width: $screen-400px) {
         //    margin-right: -70px;
 
-    }
-
-    &>p {
-        @media(max-width: $smallest-screen) {
-            width: 400px;
-
-        }
     }
 
 }

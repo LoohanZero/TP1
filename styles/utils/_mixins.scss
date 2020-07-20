@@ -76,7 +76,7 @@
     @media(max-width: $mobile) {
         width: 100%;
     }
-    @media(max-width: $screen-400px) {
+    @media(max-width: $smallest-screen) {
         max-width: 400px;
          
      }

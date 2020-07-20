@@ -28,7 +28,7 @@ body {
 }
 @media (max-width: 400px) {
   body main {
-    padding-left: 50px;
+    padding-left: 70px;
   }
 }
 a {
@@ -39,12 +39,6 @@ section {
   height: 100vh;
   width: 100%;
 }
-@media (max-width: 550px) {
-  section > p {
-    width: 400px;
-  }
-}
-
 ul {
   list-style: none;
 }
@@ -1652,7 +1646,7 @@ ul.aside-list-dropdown {
     width: 100%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 550px) {
   .aboutus p {
     max-width: 400px;
   }
@@ -1851,7 +1845,7 @@ ul.aside-list-dropdown {
     width: 100%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 550px) {
   .services-section .services-sub {
     max-width: 400px;
   }
@@ -1944,7 +1938,7 @@ ul.aside-list-dropdown {
     width: 100%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 550px) {
   .chooseus-header p {
     max-width: 400px;
   }
@@ -2128,7 +2122,7 @@ ul.aside-list-dropdown {
     width: 100%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 550px) {
   #team .team-subtitle {
     max-width: 400px;
   }
@@ -2187,7 +2181,7 @@ ul.aside-list-dropdown {
     width: 100%;
   }
 }
-@media (max-width: 400px) {
+@media (max-width: 550px) {
   .ourclients p {
     max-width: 400px;
   }
